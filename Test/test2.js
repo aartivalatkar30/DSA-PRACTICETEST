@@ -1,18 +1,20 @@
 // test - 2
-// Question 1:
-// Write a JavaScript function that takes an array of numbers as input and returns a new array with each number squared.
-
-// Input: [1, 2, 3, 4, 5]
 
 
-function squareArray(number){
 
-  return number.map(num =>num*num);
+// array=[1,2,3,4,5];
+// array1=[];
+// function square(array){
+//     for(var i=0;i<array.length;i++){
+//         // console.log(array[i])
+//         var squre1=array[i]*array[i];
+//         array1.push(squre1);
+//     }
+//     return array1
+// }
 
-}
-const input = [1,2,3,4,5];
-const sqnum=squareArray(input);
-console.log("sqnum"+input);
+// const array2=square(array);
+// console.log(array2);
 
 
 
@@ -22,27 +24,77 @@ console.log("sqnum"+input);
 // Input: "madam"
 
 
-function isPalindrome(str) {
-    // Remove non-alphanumeric characters and convert to lowercase
-    const cleanStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
-    
-    // Compare the clean string with its reverse
-    return cleanStr === cleanStr.split('').reverse().join('');
-}
 
-// Test the function
-console.log(isPalindrome("madam")); // Output: true
+// function palindrome(name){
+
+
+//   var str=""
+
+//   for(var i=name.length-1;i>=0;i--)
+// {
+
+//     str +=name[i];
+// }
+
+// if(name===str){
+
+//   console.log("true")
+// }
+// else{
+
+//   console.log("false")
+// }
+// }
+// palindrome("madam");
+
+
 
 
 // Question 3:
 // Write a JavaScript function that takes two arrays as input and returns a new array that contains only the elements that are present in both arrays (intersection).
+// array1=[1,2,3,4];
+// array2=[3,4,5,6];
 
-// Input: [1, 2, 3, 4], [3, 4, 5, 6]
+// array3=[]
+
+// function intersection(array1,array2){
+//       for(var i=0;i<array1.length;i++){
+//           for(var j=0;j<array2.length;j++){
+//               // console.log(array1[i],array2[j])
+//               if(array1[i]===array2[j]){
+//                   array3.push(array1[i])
+//               }
+//           }
+//       }
+//       return array3
+//   }
+  
+//   const array4=intersection(array1,array2);
+//   console.log(array4)
+
+
+
 
 // Question 4:
 // Create a JavaScript function that takes an object and a key as input, and returns the value associated with that key in the object. If the key does not exist, return a default value.
 
 // Input: {name: "Alice", age: 25}, "name"
+
+// var info = {name: "Alice", age: 25}
+
+
+// function fetchkey(){
+// console.log(info.name);
+
+
+// }
+// fetchkey(info)
+
+
+
+
+
+
 
 // Question 5:
 // Write a JavaScript function that takes a number as input and returns an array of its digits.
@@ -50,35 +102,70 @@ console.log(isPalindrome("madam")); // Output: true
 // Input: 12345
 
 
-function Digits(num1){
 
-  const num2 =num1.toString();
 
-return num2.split('').map(digit => parseInt(digit));
-}
 
-const input1 =12345;
+// var number2 =[];
 
-console.log("nubers are::::"+Digits(input1))
+// function digit(number){
+
+// var number1;
+// number1 = number.toString();
+// for(var i=0;i<number1.length;i++)
+// {
+
+//   number3 = i+1;
+//   number2.push(number3)
+// }
+
+
+// return number2;
+// }
+// const numarray = digit(12345)
+
+// console.log(numarray)
 // Question 6:
 // Create a JavaScript function that takes a string as input and returns a new string with each character duplicated (e.g., "hello" becomes "hheelllloo").
 
-
-function duplicateChar(str){
-
-  return str.split('').map(char => char+char).join('');
-}
-
-const inputs = "hello";
-  console.log(duplicateChar(inputs));
- 
-
 // Input: "hello"
+
+
+
+// function duplicateval(str)
+
+// {
+
+
+//   for(var i=0;i<str.length;i++){
+
+
+//     var str2='';
+//     str2 +=str[i]+str[i];
+//     console.log(str2)
+//   }
+// }
+// duplicateval("hello")
+
+
+
 
 // Question 7:
 // Write a JavaScript function that takes an array of objects and a key, and returns an array containing the values associated with that key from each object.
 
 // Input: [{name: "Alice"}, {name: "Bob"}, {name: "Charlie"}], "name"
+
+// var info= [{name: "Alice"}, {name: "Bob"}, {name: "Charlie"}];
+// function fetchval(){
+
+//   for(let key in info)
+//     {
+
+//       console.log(info[key])
+//     }
+// }
+// fetchval(info);
+
+
 
 // Question 8:
 // Create a JavaScript function that takes a sentence as input and returns the number of words in the sentence.
@@ -88,16 +175,23 @@ const inputs = "hello";
 
 
 
-function word(sent){
-const words =sent.split(/\s+/);
-return words.length;
-}
-const arrword = "This is a sample sentence.";
-console.log(word(""+arrword));
-// Question 9:
-// Write a JavaScript function that takes an array of numbers and returns the second smallest number in the array.
 
-// Input: [10, 2, 14, 5, 7]
+// // Question 9:
+// // Write a JavaScript function that takes an array of numbers and returns the second smallest number in the array.
+
+// // Input: [10, 2, 14, 5, 7]
+
+
+// array=[10,2,14,5,7]
+// function smallNum(array){
+// array.sort((a,b)=>a-b);
+// return array[1];
+
+// }
+// console.log(smallNum(array));
+
+
+
 
 // Question 10:
 // Create a JavaScript function that takes a date object and returns a formatted string in the format "YYYY-MM-DD".
@@ -105,3 +199,14 @@ console.log(word(""+arrword));
 // Input: new Date(2024, 4, 15)
 
 
+// date=[2024, 4, 15]
+// function newDate(date){
+
+//   a=date.slice(0,1);
+//   b=date.slice(1,2);
+//   c = date.slice(2);
+//   d = a +'-'+ b+'-'+ c;
+// console.log(d)
+// }
+
+// newDate(date)
